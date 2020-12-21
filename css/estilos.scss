@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+::selection{
+    color: #ff0000;
+    background-color: #000000b0;
+}
+
+body{
+    background-image: url(../img/fondo.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.wave2{
+    position: absolute;
+    width: 100%;
+}
+
+header{
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    background-color: #33333391;
+    text-align: center;
+    transition: all 0.3s !important;
+
+    &:hover{
+        background-color: #333333;
+    }
+
+    &:hover ul li a{
+        color: #ff2424;
+    }
+
+    &:hover .logo{
+        rotate: -10deg;
+    }
+
+    .logo{
+        width: 10vh;
+        margin-top: 8px;
+        border-radius: 50%;
+        margin-right: 80vh;
+        transition: all 0.5s !important;
+    }
+
+    ul{
+        list-style: none;
+        display: inline-flex;
+    }
+
+    ul li{
+        padding: 2px 20px;
+        align-self: center;
+    }
+
+    ul li a{
+        color: #fff;
+        font-size: 3.5vh;
+        transition: all 0.3s !important;
+    }
+}
+#intro{
+    padding-top: 1px;
+    height: 99vh;
+    background-attachment: fixed;
+    text-align: center;
+    background-size: cover;
+
+    #particles-js {
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+    }
+
+    .title{
+        color: #ffff00;
+        font-size: 12vh;
+        margin-top: 20vh;
+        animation: title ease-in 5s infinite alternate;
+    }
+
+    @keyframes title{
+        0%{
+            color: #ffbb00;
+        }
+        25%{
+            color: #00ff88;
+        }
+        50%{
+            color: #00fff2;
+        }
+        75%{
+            color: #fff;
+        }
+        100%{
+            color: #ff3c3c;
+        }
+    }
+
+    p{
+        font-size: 3vh;
+        color: #e0e0e0;
+        margin-top: 1vh;
+        margin-bottom: 6vh;
+    }
+
+    .ilustracionInicio{
+        margin-bottom: 8vh;
+        width: 35vh;
+        animation: sacudir ease-in 1s infinite alternate;
+    }
+
+    @keyframes sacudir{
+        0% {
+            transform: rotate(-2deg);
+        }
+
+        100% {
+            transform: rotate(2deg);
+        }
+    }
+
+    .btDown a{
+        font-size: 4vh;
+        position: relative;
+        background-color: #0000007e;
+        padding: 5px 20px;
+        border: 1px solid #00ffb3;
+        border-radius: 5px;
+        color: #00ffb3;
+        transition: all 0.7s;
+    }
+
+    .btDown a:hover{
+        background-color: #00ffb3ab;
+        border: 1px solid #000;
+        color: #000;
+    }
+}
+
+#quiensoy{
+    padding: 200px 50px;
+    background-color: #333333;
+
+    h2{
+        font-size: 7vh;
+        color: #fff;
+    }
+
+    .quesoy{
+        color: #ff2424;
+    }
+
+    p{
+        font-size: 3vh;
+        color: #cecece;
+        margin-bottom: 40px;
+    }
+
+    .blanco{
+        color: white;
+        font-size: 3.5vh;
+    }
+
+    .sabermas-bt{
+        font-size: 4vh;
+        color: #fff;
+        padding: 7px 15px;
+        background-color: #000000c2;
+        border: 1px solid #000;
+        border-radius: 5px;
+        transition: all 1s;
+
+        &:hover{
+            background-color: #00000033;
+        }
+    }
+
+    .ilustracion{
+        float: right;
+        width: 40vh;
+        margin-left: 300px;
+        animation: rotar ease-in 0.7s infinite alternate;
+    }
+
+    @keyframes rotar{
+        0% {
+            transform: rotate(0.7deg);
+        }
+        100% {
+            transform: rotate(-0.7deg);
+        }
+    }
+
+    .icon{
+        color: #fff;
+        padding: 10px;
+        font-size: 6vh;
+        margin: 30px 20px;
+        border-radius: 50%;
+        transition: all 0.3s;
+        background-color: #00000046;
+    }
+}
+
+#proyectos{
+    text-align: center;
+    padding: 170px 50px;
+    background: linear-gradient(180deg, rgba(0,255,171,1) 0%, rgba(0,125,255,1) 50%, rgba(0,1,255,1) 100%);
+
+    
+    h2{
+        margin: 8vh;
+        font-size: 7vh;
+        color: #fff;
+    }
+
+    .lmImg, .ptImg, .pyImg{
+        width: 60vh;
+        opacity: 0.8;
+        transition: all 0.3s;
+
+        &:hover{
+            opacity: 1;
+        }
+    }
+}
+
+
+.tecnologias{
+    padding-top: 100px;
+    text-align: center;
+
+    h2{
+        font-size: 7vh;
+        color: #fff;
+    }
+
+    .js{
+        width: 20vh;
+    }
+
+    .php{
+        width: 23vh;
+    }
+
+    .html{
+        width: 16vh;
+    }
+
+    .css{
+        width: 18.5vh;
+    }
+
+    .mysql{
+        width: 30vh;
+    }
+}
+
+#contact{
+    padding: 100px 0;
+
+    h2{
+        font-size: 7vh;
+        margin-bottom: 30px;
+        color: #fff;
+    }
+    
+    input{
+        text-align: center;
+        width: 50%;
+        padding: 5px;
+        font-size: 3vh;
+        margin: 15px 0;
+        display: block;
+        border: 1px solid #000;
+        border-radius: 5px;
+        transition: all 0.3s !important;
+
+        &:hover{
+            width: 52%;
+        }
+    }
+    
+    #textarea{
+        text-align: center;
+        min-width: 50%;
+        max-width: 50%;
+        height: 100px;
+        min-height: 100px;
+        max-height: 200px;
+        padding: 5px;
+        font-size: 3vh;
+        border: 1px solid #000;
+        border-radius: 5px;
+    }
+    
+    .enviar{
+        width: 20%;
+        margin-top: 30px;
+        font-size: 3vh;
+        background-color: #006eff;
+        color: #fff;
+        cursor: pointer;
+
+        &:hover{
+            width: 22%;
+        }
+    }
+}

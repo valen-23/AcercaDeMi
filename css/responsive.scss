@@ -1,0 +1,137 @@
+@media screen and (max-width: 800px){
+    header{
+        display: none;
+    }
+
+    #intro{
+        .title{
+            font-size: 7vh;
+        }
+
+        p{
+            font-size: 2.5vh;
+        }
+    }
+
+    #quiensoy{
+        padding: 50px;
+        background-color: #333333;
+
+        h2{
+            font-size: 2.3vh;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        p{
+            font-size: 2vh;
+        }
+
+        .blanco{
+            font-size: 2.3vh;
+        }
+
+        .sabermas-bt{
+            font-size: 2vh;
+            color: #fff;
+            padding: 7px 15px;
+            background-color: #000000c2;
+            border: 1px solid #000;
+            border-radius: 5px;
+            transition: all 1s;
+        }
+
+        .ilustracion{
+            display: none;
+        }
+
+        .icon{
+            font-size: 3vh;
+        }
+    }
+
+    #proyectos{
+        padding: 50px 0;
+        background: linear-gradient(180deg, rgba(0,255,171,1) 0%, rgba(0,125,255,1) 50%, rgba(0,1,255,1) 100%);
+
+        
+        h2{
+            margin: 8vh 0;
+            font-size: 5vh;
+            color: #fff;
+        }
+
+        .lmImg, .ptImg, .pyImg{
+            width: 50vh;
+            margin: 20px auto;
+            display: block;
+        }
+    }
+
+
+    .tecnologias{
+        padding-top: 100px;
+        text-align: center;
+
+        h2{
+            font-size: 7vh;
+            color: #fff;
+        }
+
+        .js{
+            width: 8vh;
+        }
+
+        .php{
+            width: 9vh;
+        }
+
+        .html{
+            width: 7.5vh;
+        }
+
+        .css{
+            width: 9vh;
+        }
+
+        .mysql{
+            width: 15vh;
+        }
+    }
+
+    #contact{
+        padding: 50px 0;
+
+        h2{
+            font-size: 5vh;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+        
+        input{
+            width: 80%;
+
+            &:hover{
+                width: 90%;
+            }
+        }
+        
+        #textarea{
+            min-width: 80%;
+            max-width: 80%;
+        }
+        
+        .enviar{
+            width: 50%;
+            margin-top: 30px;
+            font-size: 3vh;
+            background-color: #006eff;
+            color: #fff;
+            cursor: pointer;
+
+            &:active{
+                width: 100%;
+            }
+        }
+    }
+}

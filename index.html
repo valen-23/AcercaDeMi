@@ -1,0 +1,166 @@
+<!-- <?php 
+	include("registrar.php");
+?> -->
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Valentino Pagani - DESING</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Nunito+Sans:wght@200;300&display=swap" rel="stylesheet"> 
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><img src="img/logo.jpg" alt="logo" class="logo"></li>
+				<li><a href="#quiensoy">Sobre Mí</a></li>
+				<li><a href="#proyectos">Proyectos</a></li>
+				<li><a href="#contact">Contactame</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div id="intro">
+		<div id="particles-js"></div>
+		<h1 class="title">Valentino Pagani</h1>
+		<p>FrontEnd  |  Desarrollador Web  |  HTML CSS JS</p>
+		<img src="img/ilustracionInicio.svg" alt="ilus" class="ilustracionInicio"><br>
+		<p class="btDown"><a href="#quiensoy">ver mas</a></p>
+		<div class="wave" style="height: 100px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-13.26,41.94 C156.04,253.13 324.21,-44.89 503.67,87.33 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #333333;"></path></svg></div>
+	</div>
+
+
+	<div id="quiensoy">
+		<img src="img/ilustracion.svg" alt="" class="ilustracion">
+		<h2 class="titulo">Hola! Me llamo Valentino<br>Soy Futuro <span class="typed"></span></h2>
+		<p class="desc">Desarrollo tu pagina web deceada, hecha 100% a medida, con todas las tendencia del momento. En esta cuarentena, sumate al mundo on-line<br><b class="blanco">¿Que estas Esperando?</b></p>
+		
+		<a href="#proyectos" class="sabermas-bt">Mis Proyectos</a>
+		<br><br><br><br>
+		<div class="iconos">
+			<a href="#"><span class="icon-instagram icon"></span></a>
+			<a href="#"><span class="icon-whatsapp icon"></span></a>
+			<a href="#"><span class="icon-envelop icon"></span></a>
+		</div>
+	</div>
+	<div class="wave2" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #333333;"></path></svg></div>
+
+
+	<div id="proyectos">
+		<h2>Conocé mis Trabajos</h2>
+
+		<a href="#"><img src="img/LM.png" alt="LM" class="lmImg" title="La Medialunera"></a>
+		<a href="#"><img src="img/PagTia.png" alt="PagTia" class="ptImg" title="Muy Marcela"></a>
+		<a href="#"><img src="img/ProyInfo.png" alt="py" class="pyImg" title="It-ProyInfo"></a>
+	</div>
+	<div class="wave2" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: rgba(0,1,255,1);"></path></svg></div>
+
+	<div class="tecnologias">
+		<h2>Tecnoligías</h2>
+
+		<img src="img/js.png" alt="" class="js">
+		<img src="img/php.png" alt="" class="php">
+		<img src="img/html.png" alt="" class="html">
+		<img src="https://coryrylan.com/assets/images/posts/types/css.svg" alt="" class="css">
+		<img src="https://cdn.worldvectorlogo.com/logos/mysql.svg" alt="" class="mysql">
+	</div>
+	
+	<div id="contact">
+		<center>
+			<h2>Contactame por Acá</h2>
+			<form method="post">
+				<input type="text" name="nombre" placeholder="Nombre" class="nombre animacion">
+				<input type="email" name="email" placeholder="email" class="gmail animacion">
+				<textarea name="mensaje" id="textarea" placeholder="Mensaje" class="mg animacion"></textarea>
+				<input type="submit" name="enviar" class="enviar">
+			</form>
+		</center>
+	</div>
+
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<script>
+		window.sr = ScrollReveal();
+			sr.reveal('header', {
+				duration: 5000,
+				origin: 'top',
+				distance: '100px'
+			});
+			sr.reveal('.ilustracion', {
+				duration: 2000,
+				origin: 'right',
+				distance: '100px'
+			});
+			sr.reveal('.titulo', {
+				duration: 2000,
+				origin: 'left',
+				distance: '100px'
+			});
+			sr.reveal('.desc', {
+				duration: 2000,
+				origin: 'bottom',
+				distance: '100px'
+			});
+			sr.reveal('.sabermas-bt', {
+				duration: 2000,
+				origin: 'top',
+				distance: '100px'
+			});
+			sr.reveal('.iconos', {
+				duration: 2000,
+				origin: 'left',
+				distance: '100px'
+			});
+			sr.reveal('.js', {
+				duration: 2000,
+				origin: 'left',
+				distance: '100px'
+			});
+			sr.reveal('.php', {
+				duration: 2000,
+				origin: 'left',
+				distance: '100px'
+			});
+			sr.reveal('.html', {
+				duration: 2000,
+				origin: 'bottom',
+				distance: '100px'
+			});
+			sr.reveal('.css', {
+				duration: 2000,
+				origin: 'rigth',
+				distance: '100px'
+			});
+			sr.reveal('.mysql', {
+				duration: 2000,
+				origin: 'rigth',
+				distance: '100px'
+			});
+			sr.reveal('.cañuelas', {
+				duration: 2000,
+				origin: 'left',
+				distance: '100px'
+			});
+			sr.reveal('.tejas', {
+				duration: 2000,
+				origin: 'left',
+				distance: '100px'
+			});
+			sr.reveal('.accordion-item', {
+				duration: 2000,
+				origin: 'bottom',
+				distance: '100px'
+			});
+	</script>
+
+	<script src="js/main.js"></script>
+	<script src="jsP/particles.js"></script>
+	<script src="jsP/app.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+	<script src="./js/typed.js"></script>
+</body>
+</html>
